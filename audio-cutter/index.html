@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free online audio cutter tool to trim MP3, WAV, and music files easily using a modern responsive interface.">
+    <meta name="keywords" content="audio cutter, mp3 cutter, trim audio, cut music online, audio editor">
+    <meta name="author" content="Audio Cutter Tool">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Audio Cutter Online</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="fa-solid fa-file-waveform text-primary me-2"></i>Audio Cutter
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="fw-bold mb-3">
+                        Cut & Trim Audio Files Online
+                    </h1>
+
+                    <p class="text-secondary mb-4">
+                        Easily upload and trim your MP3, WAV, and audio files with a fast, simple, and responsive online audio cutter tool.
+                    </p>
+
+                    <div class="bg-white border rounded-4 shadow-sm p-4">
+                        <div class="mb-4">
+                            <i class="fa-solid fa-file-audio fa-4x text-secondary"></i>
+                        </div>
+
+                        <input type="file" class="form-control mb-3" id="audioInput" accept="audio/*">
+
+                        <audio id="audioPlayer" class="w-100 mb-4 d-none" controls></audio>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Start Time (seconds)</label>
+                                <input type="number" class="form-control" id="startTime" placeholder="0">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">End Time (seconds)</label>
+                                <input type="number" class="form-control" id="endTime" placeholder="30">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary w-100 mt-4" id="cutButton">
+                            <i class="fa-solid fa-scissors me-2"></i>Cut Audio
+                        </button>
+
+                        <div class="alert alert-light border mt-4 mb-0" id="resultMessage">
+                            Upload an audio file and choose the trim duration.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-8">
+                    <div class="bg-white border rounded-4 shadow-sm p-4">
+                        <h2 class="h4 fw-bold mb-3">
+                            About This Audio Cutter
+                        </h2>
+
+                        <p class="text-secondary">
+                            This online audio cutter helps you trim music, podcasts, ringtones, and voice recordings directly from your browser. 
+                            The interface is designed to be clean, lightweight, and mobile-friendly for easy use on desktop and smartphone devices.
+                        </p>
+
+                        <p class="text-secondary mb-0">
+                            You can upload audio files, preview them instantly, and choose the start and end times for trimming. 
+                            Perfect for creating ringtones, short clips, and edited sound files quickly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ad Space -->
+                <div class="col-lg-4">
+                    <div class="bg-white border rounded-4 shadow-sm p-4 text-center">
+                        <p class="fw-semibold text-secondary mb-3">
+                            Advertisement
+                        </p>
+
+                        <div class="border rounded-3 d-flex align-items-center justify-content-center bg-light"
+                             style="height:250px;">
+                            <div>
+                                <i class="fa-solid fa-rectangle-ad fa-3x text-secondary mb-3"></i>
+                                <p class="text-muted mb-0">
+                                    300 x 250 Ad Space
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 shadow-sm p-4">
+                <div class="row g-4 text-center">
+
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-bolt fa-2x mb-3 text-secondary"></i>
+                        <h3 class="h5 fw-bold">Fast Processing</h3>
+                        <p class="text-secondary mb-0">
+                            Upload and trim audio quickly with a smooth browser experience.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-mobile-screen-button fa-2x mb-3 text-secondary"></i>
+                        <h3 class="h5 fw-bold">Responsive Design</h3>
+                        <p class="text-secondary mb-0">
+                            Optimized for desktop, tablet, and smartphone devices.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-lock fa-2x mb-3 text-secondary"></i>
+                        <h3 class="h5 fw-bold">Private & Secure</h3>
+                        <p class="text-secondary mb-0">
+                            Your uploaded audio stays within your browser session.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-4">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="fw-semibold">
+                        © 2026 Audio Cutter Tool
+                    </span>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none text-secondary me-3">Privacy</a>
+                    <a href="#" class="text-decoration-none text-secondary me-3">Terms</a>
+                    <a href="#" class="text-decoration-none text-secondary">Contact</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Audio Script -->
+    <script>
+        const audioInput = document.getElementById('audioInput');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const cutButton = document.getElementById('cutButton');
+        const resultMessage = document.getElementById('resultMessage');
+
+        audioInput.addEventListener('change', function () {
+            const file = this.files[0];
+
+            if (file) {
+                const audioURL = URL.createObjectURL(file);
+
+                audioPlayer.src = audioURL;
+                audioPlayer.classList.remove('d-none');
+
+                resultMessage.innerHTML = `
+                    <i class="fa-solid fa-circle-check me-2"></i>
+                    Audio loaded successfully.
+                `;
+            }
+        });
+
+        cutButton.addEventListener('click', function () {
+            const start = document.getElementById('startTime').value;
+            const end = document.getElementById('endTime').value;
+
+            if (!audioInput.files.length) {
+                resultMessage.innerHTML = `
+                    <i class="fa-solid fa-triangle-exclamation me-2"></i>
+                    Please upload an audio file first.
+                `;
+                return;
+            }
+
+            resultMessage.innerHTML = `
+                <i class="fa-solid fa-scissors me-2"></i>
+                Audio trimming preview from ${start || 0}s to ${end || 0}s.
+            `;
+        });
+    </script>
+
+</body>
+</html>

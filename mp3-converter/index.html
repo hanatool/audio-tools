@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MP3 Converter - Fast Audio Converter</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Free online MP3 converter tool to convert audio files quickly and easily with a modern responsive interface." />
+    <meta name="keywords" content="mp3 converter, audio converter, online converter, convert mp3, music converter" />
+    <meta name="author" content="MP3 Converter" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-none sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="#">
+                <i class="fa-solid fa-music text-primary me-2"></i>MP3 Converter
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Converter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="badge bg-primary mb-3">
+                        Free Online Tool
+                    </span>
+
+                    <h1 class="fw-bold text-dark mb-3">
+                        Fast & Simple MP3 Converter
+                    </h1>
+
+                    <p class="text-secondary mb-4">
+                        Convert your audio files into MP3 format quickly and securely using our modern online converter. 
+                        Upload files, choose your format, and download high-quality MP3 audio instantly from any device.
+                    </p>
+
+                    <div class="bg-white border rounded-4 p-4 shadow-sm">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-file-audio fa-3x text-primary"></i>
+                        </div>
+
+                        <h5 class="fw-semibold mb-3">
+                            Upload Audio File
+                        </h5>
+
+                        <input class="form-control mb-3" type="file" id="audioFile" accept="audio/*">
+
+                        <select class="form-select mb-3" id="formatSelect">
+                            <option value="mp3">Convert to MP3</option>
+                            <option value="wav">Convert to WAV</option>
+                            <option value="aac">Convert to AAC</option>
+                            <option value="ogg">Convert to OGG</option>
+                        </select>
+
+                        <button class="btn btn-primary w-100" id="convertBtn">
+                            <i class="fa-solid fa-repeat me-2"></i>Convert Now
+                        </button>
+
+                        <div id="resultBox" class="alert alert-success mt-4 d-none">
+                            Conversion completed successfully.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVERTISEMENT -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 shadow-sm p-5 text-center">
+                <p class="text-muted mb-2">
+                    Advertisement Space
+                </p>
+
+                <div class="py-5">
+                    <i class="fa-solid fa-rectangle-ad fa-3x text-secondary mb-3"></i>
+                    <h5 class="fw-semibold text-dark">
+                        728 x 90 Banner Ads
+                    </h5>
+                    <p class="text-secondary mb-0">
+                        Place Google Ads, affiliate banners, or sponsorship content here.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="bg-white border rounded-4 p-4 shadow-sm h-100">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-bolt fa-2x text-primary"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Fast Conversion
+                        </h5>
+
+                        <p class="text-secondary mb-0">
+                            Convert audio files in seconds with a lightweight and optimized system.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white border rounded-4 p-4 shadow-sm h-100">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-shield-halved fa-2x text-primary"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Secure Uploads
+                        </h5>
+
+                        <p class="text-secondary mb-0">
+                            Your uploaded files are processed safely with privacy-focused handling.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white border rounded-4 p-4 shadow-sm h-100">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-mobile-screen-button fa-2x text-primary"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Mobile Friendly
+                        </h5>
+
+                        <p class="text-secondary mb-0">
+                            Fully responsive design that works smoothly on desktop, tablet, and mobile devices.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 p-4 shadow-sm">
+                <h3 class="fw-bold mb-3">
+                    About MP3 Converter
+                </h3>
+
+                <p class="text-secondary mb-0">
+                    MP3 Converter is a free online tool designed for users who want a simple and efficient way to convert audio files into popular formats. 
+                    Whether you need MP3 for music playback, WAV for high-quality audio, or AAC for mobile devices, this converter provides an easy solution 
+                    with a clean and modern interface. The platform is lightweight, responsive, and suitable for bloggers, content creators, podcasters, 
+                    students, and everyday users looking for fast audio conversion tools.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-top py-4">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h6 class="fw-bold mb-1">
+                        MP3 Converter
+                    </h6>
+
+                    <small class="text-secondary">
+                        Free online audio conversion platform.
+                    </small>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none text-secondary me-3">Privacy</a>
+                    <a href="#" class="text-decoration-none text-secondary me-3">Terms</a>
+                    <a href="#" class="text-decoration-none text-secondary">Support</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        const convertBtn = document.getElementById('convertBtn');
+        const resultBox = document.getElementById('resultBox');
+
+        convertBtn.addEventListener('click', function () {
+            const audioFile = document.getElementById('audioFile').files.length;
+
+            if (audioFile > 0) {
+                resultBox.classList.remove('d-none');
+                resultBox.innerHTML = '<i class="fa-solid fa-circle-check me-2"></i>Your audio file is ready for conversion.';
+            } else {
+                resultBox.classList.remove('d-none');
+                resultBox.classList.replace('alert-success', 'alert-danger');
+                resultBox.innerHTML = '<i class="fa-solid fa-circle-exclamation me-2"></i>Please upload an audio file first.';
+            }
+        });
+    </script>
+
+</body>
+</html>

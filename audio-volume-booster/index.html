@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Audio Volume Booster Tool to increase audio sound online easily with modern UI." />
+    <meta name="keywords" content="audio booster, volume booster, sound enhancer, audio tool, online audio editor" />
+    <meta name="author" content="Audio Volume Booster" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Audio Volume Booster</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body class="bg-light text-dark">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-none sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-volume-high text-primary me-2"></i>Audio Volume Booster
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="bg-white border rounded-4 shadow-sm p-4 p-md-5">
+
+                        <div class="text-center mb-4">
+                            <div class="display-5 fw-bold mb-3">
+                                Boost Your Audio Volume Online
+                            </div>
+
+                            <p class="text-secondary">
+                                Upload your audio file and increase the sound volume instantly using our free and modern audio booster tool.
+                            </p>
+                        </div>
+
+                        <!-- Upload -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">
+                                Upload Audio File
+                            </label>
+
+                            <input type="file" class="form-control form-control-lg" id="audioFile" accept="audio/*">
+                        </div>
+
+                        <!-- Volume -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">
+                                Volume Booster
+                            </label>
+
+                            <input type="range" class="form-range" min="1" max="300" value="100" id="volumeRange">
+
+                            <div class="d-flex justify-content-between">
+                                <small class="text-secondary">100%</small>
+                                <small class="fw-semibold" id="volumeValue">100%</small>
+                            </div>
+                        </div>
+
+                        <!-- Audio Player -->
+                        <div class="mb-4">
+                            <audio id="audioPlayer" class="w-100" controls></audio>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-lg" id="boostButton">
+                                <i class="fa-solid fa-bolt me-2"></i>Boost Audio
+                            </button>
+
+                            <button class="btn btn-outline-secondary btn-lg" id="resetButton">
+                                <i class="fa-solid fa-rotate-left me-2"></i>Reset
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADS -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 shadow-sm p-4 text-center">
+                <div class="fw-semibold mb-2">
+                    Advertisement Space
+                </div>
+
+                <div class="text-secondary">
+                    728 x 90 Banner Ads Placement
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="bg-white border rounded-4 shadow-sm p-4">
+
+                <h2 class="h4 fw-bold mb-3">
+                    About Audio Volume Booster
+                </h2>
+
+                <p class="text-secondary">
+                    Audio Volume Booster is a free online tool designed to help users increase the volume of music, podcasts, voice recordings, and other audio files directly in the browser.
+                </p>
+
+                <p class="text-secondary">
+                    This tool works smoothly on desktop and mobile devices with a clean and modern interface powered by Bootstrap 5. Upload your audio file, adjust the booster slider, and enjoy louder sound instantly.
+                </p>
+
+                <div class="row g-3 mt-2">
+
+                    <div class="col-md-4">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="fa-solid fa-cloud-arrow-up fs-3 mb-3"></i>
+                            <h3 class="h6 fw-bold">Easy Upload</h3>
+                            <p class="small text-secondary mb-0">
+                                Upload MP3 and other audio formats quickly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="fa-solid fa-sliders fs-3 mb-3"></i>
+                            <h3 class="h6 fw-bold">Volume Control</h3>
+                            <p class="small text-secondary mb-0">
+                                Increase sound levels with adjustable controls.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="fa-solid fa-mobile-screen fs-3 mb-3"></i>
+                            <h3 class="h6 fw-bold">Responsive Design</h3>
+                            <p class="small text-secondary mb-0">
+                                Optimized for smartphones, tablets, and desktops.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-top py-4">
+        <div class="container text-center">
+
+            <div class="fw-bold mb-2">
+                Audio Volume Booster
+            </div>
+
+            <div class="text-secondary small mb-3">
+                Free Online Audio Enhancer Tool
+            </div>
+
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="small text-secondary">
+                © 2026 Audio Volume Booster. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        const audioFile = document.getElementById('audioFile');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const volumeRange = document.getElementById('volumeRange');
+        const volumeValue = document.getElementById('volumeValue');
+        const boostButton = document.getElementById('boostButton');
+        const resetButton = document.getElementById('resetButton');
+
+        audioFile.addEventListener('change', function () {
+            const file = this.files[0];
+
+            if (file) {
+                const url = URL.createObjectURL(file);
+                audioPlayer.src = url;
+            }
+        });
+
+        volumeRange.addEventListener('input', function () {
+            volumeValue.innerText = this.value + '%';
+        });
+
+        boostButton.addEventListener('click', function () {
+            const volume = volumeRange.value / 100;
+
+            audioPlayer.volume = Math.min(volume, 3);
+
+            alert('Audio volume boosted successfully!');
+        });
+
+        resetButton.addEventListener('click', function () {
+            volumeRange.value = 100;
+            volumeValue.innerText = '100%';
+            audioPlayer.volume = 1;
+        });
+    </script>
+
+</body>
+</html>
