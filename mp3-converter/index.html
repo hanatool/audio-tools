@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MP3 Converter - Fast Audio Converter</title>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Free online MP3 converter tool to convert audio files quickly and easily with a modern responsive interface." />
+    <meta name="description"
+        content="Free online MP3 converter tool to convert audio files quickly and easily with a modern responsive interface." />
     <meta name="keywords" content="mp3 converter, audio converter, online converter, convert mp3, music converter" />
     <meta name="author" content="MP3 Converter" />
     <meta name="theme-color" content="#ffffff" />
@@ -15,9 +17,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
-<body class="bg-light">
+
+<body class="bg-light text-dark">
 
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-none sticky-top">
@@ -63,7 +66,7 @@
                     </h1>
 
                     <p class="text-secondary mb-4">
-                        Convert your audio files into MP3 format quickly and securely using our modern online converter. 
+                        Convert your audio files into MP3 format quickly and securely using our modern online converter.
                         Upload files, choose your format, and download high-quality MP3 audio instantly from any device.
                     </p>
 
@@ -185,9 +188,12 @@
                 </h3>
 
                 <p class="text-secondary mb-0">
-                    MP3 Converter is a free online tool designed for users who want a simple and efficient way to convert audio files into popular formats. 
-                    Whether you need MP3 for music playback, WAV for high-quality audio, or AAC for mobile devices, this converter provides an easy solution 
-                    with a clean and modern interface. The platform is lightweight, responsive, and suitable for bloggers, content creators, podcasters, 
+                    MP3 Converter is a free online tool designed for users who want a simple and efficient way to
+                    convert audio files into popular formats.
+                    Whether you need MP3 for music playback, WAV for high-quality audio, or AAC for mobile devices, this
+                    converter provides an easy solution
+                    with a clean and modern interface. The platform is lightweight, responsive, and suitable for
+                    bloggers, content creators, podcasters,
                     students, and everyday users looking for fast audio conversion tools.
                 </p>
             </div>
@@ -232,14 +238,17 @@
 
             if (audioFile > 0) {
                 resultBox.classList.remove('d-none');
-                resultBox.innerHTML = '<i class="fa-solid fa-circle-check me-2"></i>Your audio file is ready for conversion.';
+                resultBox.innerHTML =
+                    '<i class="fa-solid fa-circle-check me-2"></i>Your audio file is ready for conversion.';
             } else {
                 resultBox.classList.remove('d-none');
                 resultBox.classList.replace('alert-success', 'alert-danger');
-                resultBox.innerHTML = '<i class="fa-solid fa-circle-exclamation me-2"></i>Please upload an audio file first.';
+                resultBox.innerHTML =
+                    '<i class="fa-solid fa-circle-exclamation me-2"></i>Please upload an audio file first.';
             }
         });
     </script>
 
 </body>
+
 </html>
