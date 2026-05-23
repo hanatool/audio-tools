@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+  <channel>
+
+    <title>Hanapha Audio Tools</title>
+    <link>https://tools.hanapha.com/audio-tools</link>
+    <description>
+      Free online audio tools for cutting, converting, recording, boosting volume, and changing audio speed directly in your browser.
+    </description>
+
+    <language>en-us</language>
+
+    <item>
+      <title>Audio Cutter</title>
+      <link>https://tools.hanapha.com/audio-tools/audio-cutter</link>
+      <description>
+        Trim and cut audio files online quickly and easily.
+      </description>
+    </item>
+
+    <item>
+      <title>Audio Speed Changer</title>
+      <link>https://tools.hanapha.com/audio-tools/audio-speed-changer</link>
+      <description>
+        Change audio playback speed directly in your browser.
+      </description>
+    </item>
+
+    <item>
+      <title>Audio Volume Booster</title>
+      <link>https://tools.hanapha.com/audio-tools/audio-volume-booster</link>
+      <description>
+        Increase and boost audio volume online for clearer sound.
+      </description>
+    </item>
+
+    <item>
+      <title>MP3 Converter</title>
+      <link>https://tools.hanapha.com/audio-tools/mp3-converter</link>
+      <description>
+        Convert audio files to MP3 format instantly.
+      </description>
+    </item>
+
+    <item>
+      <title>Voice Recorder</title>
+      <link>https://tools.hanapha.com/audio-tools/voice-recorder</link>
+      <description>
+        Record voice and audio directly from your microphone online.
+      </description>
+    </item>
+
+  </channel>
+
+</rss>

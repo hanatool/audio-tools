@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/audio-cutter</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/audio-speed-changer</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/audio-volume-booster</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/mp3-converter</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/voice-recorder</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/404.html</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/index.html</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/audio-tools/README.md</loc>
+  </url>
+
+</urlset>
